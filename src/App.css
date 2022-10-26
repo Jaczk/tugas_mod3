@@ -29,7 +29,7 @@
   top: 0;
   width: 100%;
   background-color: rgb(88, 216, 216);
-  position: fixed;
+  z-index: 2;
 }
 
 .ul {

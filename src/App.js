@@ -18,15 +18,11 @@ function App() {
             <li className='li'>
               <Link to="/show">Show</Link>
             </li>
-            <li className='li'>
-              <Link to="/line">Rand</Link>
-            </li>
           </ul>
         </nav>
         <Routes>
           <Route path='/' exact element={<Search />} />
-          {/* <Route path='/index' exact element={<Show />} />
-          <Route path='/context' exact element={<Context />} /> */}
+          <Route path='/show' exact element={<Show />}/>
         </Routes>
       </div>
     </Router>

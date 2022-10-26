@@ -1,7 +1,11 @@
 .App {
     text-align: center;
 }
-
+.App1{
+    position: static;
+    top: 80px;
+    text-align: center;
+}
 .App-logo {
     height: 40vmin;
     pointer-events: none;
@@ -43,4 +47,21 @@
 }
 .card {
     color: black;
+    z-index: 1;
+    margin: 30px;
+}
+p.card-text{
+    font-size: 20px;
+}
+.footer-p{
+    font-size: 18px;
+}
+.ViewKelompok{
+    margin-bottom: 30px;
+}
+.cardKelompok{
+    padding: 10px;
+}
+.klik{
+    padding-bottom: 18px;
 }
