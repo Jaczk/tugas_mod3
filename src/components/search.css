@@ -41,3 +41,6 @@
 .row d-flex justify-content-center {
     margin-top: 40px;
 }
+.card {
+    color: black;
+}
