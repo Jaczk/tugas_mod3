@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./Search.css";
-import aegis from "./Data.json";
-import wonyoung from "./img/wonyoung.jpg";
+import "./search.css";
+import aegis from "../Data.json";
+import wonyoung from "../img/wonyoung.jpg";
 import { Container, Image } from "react-bootstrap";
-import TextInput from "./components/textinput";
+import TextInput from "../components/textinput";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Card from "react-bootstrap/Card";
