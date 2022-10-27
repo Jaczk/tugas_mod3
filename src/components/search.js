@@ -13,10 +13,10 @@ import { faLine } from "@fortawesome/free-brands-svg-icons";
 
 export default function Search() {
     const [keyword, setKeyword] = useState("");
-    const [showKelompok, setShowKelompok] = useState(false);
-    const hideKelompok = () => {
-        setShowKelompok(!showKelompok);
-    };
+    // const [showKelompok, setShowKelompok] = useState(false);
+    // const hideKelompok = () => {
+    //     setShowKelompok(!showKelompok);
+    // };
     return (
         <div className="App">
             <Container>
@@ -87,36 +87,46 @@ export default function Search() {
                 {" "}
                 Klik "Show" untuk lihat Nama dan NIM Kelompok
             </Container>
-            <Container>
-                <div className="ViewKelompok">
-                    <div
-                        className="ViewKelompok1"
-                        style={{
-                            display: showKelompok === true ? "flex" : "none",
-                        }}
-                    >
-                        <Card className="cardKelompok">
-                            <Card.Title>Liem Christopher Jaya Mulyawan</Card.Title>
-                            <Card.Text>21120119130073</Card.Text>
-                        </Card>
-                        <Card className="cardKelompok">
-                            <Card.Title>Muhammad Dzulfiqar Rafli Anwar</Card.Title>
-                            <Card.Text>21120119130065</Card.Text>
-                        </Card>
-                        <Card className="cardKelompok">
-                            <Card.Title>Nisrina Shofa</Card.Title>
-                            <Card.Text>21120119120002</Card.Text>
-                        </Card>
-                        <Card className="cardKelompok">
-                            <Card.Title>Muhammad Ilham W.</Card.Title>
-                            <Card.Text>21120119140118</Card.Text>
-                        </Card>
-                    </div>
-                    <Button onClick={hideKelompok}>
-                        {showKelompok !== true ? "Show" : "Hide"}
-                    </Button>
-                </div>
-            </Container>
+            <ThemedButton />                                       
         </div>
     );
+}
+
+function ThemedButton() {
+    const [showKelompok, setShowKelompok] = useState(false);
+    const hideKelompok = () => {
+        setShowKelompok(!showKelompok);
+    };
+    return (
+        <Container>
+            <div className="ViewKelompok">
+                <div
+                    className="ViewKelompok1"
+                    style={{
+                        display: showKelompok === true ? "flex" : "none",
+                    }}
+                >
+                    <Card className="cardKelompok">
+                        <Card.Title>Liem Christopher Jaya Mulyawan</Card.Title>
+                        <Card.Text>21120119130073</Card.Text>
+                    </Card>
+                    <Card className="cardKelompok">
+                        <Card.Title>Muhammad Dzulfiqar Rafli Anwar</Card.Title>
+                        <Card.Text>21120119130065</Card.Text>
+                    </Card>
+                    <Card className="cardKelompok">
+                        <Card.Title>Nisrina Shofa</Card.Title>
+                        <Card.Text>21120119120002</Card.Text>
+                    </Card>
+                    <Card className="cardKelompok">
+                        <Card.Title>Muhammad Ilham W.</Card.Title>
+                        <Card.Text>21120119140118</Card.Text>
+                    </Card>
+                </div>
+                <Button onClick={hideKelompok}>
+                    {showKelompok !== true ? "Show" : "Hide"}
+                </Button>
+            </div>
+        </Container>
+    )
 }
